@@ -1,3 +1,5 @@
 FROM ubuntu:16.04
 
-CMD /bin/sh
+COPY . /app/
+
+CMD /app/run.sh
