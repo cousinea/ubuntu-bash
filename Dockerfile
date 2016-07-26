@@ -2,4 +2,4 @@ FROM ubuntu:16.04
 
 COPY . /app/
 
-CMD /app/spawn.sh
+CMD /app/run.sh
