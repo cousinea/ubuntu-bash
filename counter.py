@@ -1,6 +1,7 @@
 # Stack descriptions along the top row of the document
 # Then stack answers per user along subsequent rows.
 from datetime import datetime
+import os
 
 def run_counter():
 
@@ -8,6 +9,7 @@ def run_counter():
 		print str(counter)
 		counter += 1
 		
-print "started at: " + str(datetime.now()) + "\n"
+print "started at: " + str(datetime.now())
+print "the HOWDY environmental variable is: " + os.environ['HOWDY']
 run_counter()
-print "ended at: " + str(datetime.now()) + "\n"
+print "ended at: " + str(datetime.now())
